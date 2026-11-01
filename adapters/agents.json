@@ -1,0 +1,34 @@
+{
+  "$comment": "Verified 2026-11-01. Each entry links the agent's own documentation. Skill directories are resolved against the project root (or the user's home with --user).",
+  "agents": [
+    {
+      "id": "claude-code",
+      "name": "Claude Code",
+      "projectDir": ".claude/skills",
+      "userDir": "~/.claude/skills",
+      "docs": "https://code.claude.com/docs/en/skills"
+    },
+    {
+      "id": "codex",
+      "name": "Codex",
+      "projectDir": ".agents/skills",
+      "userDir": "~/.agents/skills",
+      "docs": "https://developers.openai.com/codex/skills"
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "projectDir": ".agents/skills",
+      "userDir": "~/.agents/skills",
+      "docs": "https://cursor.com/docs/context/skills",
+      "alsoReads": [".claude/skills", ".cursor/skills", ".codex/skills"]
+    },
+    {
+      "id": "generic",
+      "name": "Any agent (choose a directory)",
+      "projectDir": ".agents/skills",
+      "userDir": "~/.agents/skills",
+      "docs": "https://skillpm.dev/creating-skills/"
+    }
+  ]
+}

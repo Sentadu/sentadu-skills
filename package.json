@@ -1,0 +1,46 @@
+{
+  "name": "@sentadu/skills",
+  "version": "1.0.0",
+  "description": "Agent skills for the Sentadu eSIM API: ordering, webhooks, and credential handling, installed into whichever directory your coding agent reads.",
+  "license": "MIT",
+  "author": "PT. Digital One Global",
+  "type": "module",
+  "bin": {
+    "sentadu-skills": "./bin/cli.mjs"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "skills/",
+    "adapters/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "agent-skill",
+    "agent-skills",
+    "sentadu",
+    "esim",
+    "ai-agent",
+    "claude-code",
+    "codex",
+    "cursor"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sentadu/sentadu-skills.git"
+  },
+  "homepage": "https://sentadu.com/id/docs/skills",
+  "bugs": {
+    "url": "https://github.com/Sentadu/sentadu-skills/issues"
+  },
+  "scripts": {
+    "test": "node --test \"tests/*.test.mjs\"",
+    "pack:check": "node scripts/pack-check.mjs",
+    "prepublishOnly": "node --test \"tests/*.test.mjs\" && node scripts/pack-check.mjs"
+  }
+}
